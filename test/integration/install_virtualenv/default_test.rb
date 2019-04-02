@@ -5,3 +5,6 @@
 # The Inspec reference, with examples and extensive documentation, can be
 # found at http://inspec.io/docs/reference/resources/
 
+describe command('virtualenv --version') do
+    its (:stdout) { should match(/15.0.1/) }
+  end
